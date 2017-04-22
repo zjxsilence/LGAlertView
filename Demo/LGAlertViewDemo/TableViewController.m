@@ -8,6 +8,7 @@
 #import "TableViewControllerActionSheet.h"
 #import "TableViewControllerCustomAlert.h"
 #import "TableViewControllerCustomActionSheet.h"
+#import "TableViewControllerBlur.h"
 #import "LGAlertView.h"
 
 @interface TableViewController () <LGAlertViewDelegate, UIAlertViewDelegate, UIActionSheetDelegate>
@@ -28,8 +29,10 @@
                              @"Custom AlertView Styles",
                              @"Custom ActionSheet Styles",
                              @"",
-                             @"Alerts cycle",
-                             @"Mix of alerts"];
+                             @"Blur Effect",
+                             @"",
+                             @"Alerts Cycle",
+                             @"Mix of Alerts"];
 
         [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
 
@@ -55,10 +58,14 @@
 
     cell.textLabel.font = [UIFont systemFontOfSize:16.0];
     cell.textLabel.text = self.titlesArray[indexPath.row];
-    cell.userInteractionEnabled = [self.titlesArray[indexPath.row] length] > 0;
 
-    if (indexPath.row < 4) {
+    if (indexPath.row < 6) {
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    }
+
+    if ([self.titlesArray[indexPath.row] length] == 0) {
+        cell.userInteractionEnabled = NO;
+        cell.accessoryType = UITableViewCellAccessoryNone;
     }
 
     return cell;
@@ -87,9 +94,12 @@
             nextViewController = [TableViewControllerCustomActionSheet new];
             break;
         case 5:
+            nextViewController = [TableViewControllerBlur new];
+            break;
+        case 7:
             [self showRandomAlertWithNumber:NSNotFound];
             break;
-        case 6:
+        case 8:
             for (NSUInteger i=0; i<10; i++) {
                 [self showRandomAlertWithNumber:(i + 1) delay:(i * 1.0)];
             }

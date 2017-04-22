@@ -92,7 +92,6 @@
             alertView.coverAlpha = 0.85;
             alertView.layerShadowColor = [UIColor colorWithWhite:0.0 alpha:0.3];
             alertView.layerShadowRadius = 4.0;
-            alertView.layerShadowOpacity = 1.0;
             [alertView showAnimated:YES completionHandler:nil];
 
             break;
@@ -113,7 +112,6 @@
             alertView.coverAlpha = 0.85;
             alertView.layerShadowColor = [UIColor colorWithWhite:0.0 alpha:0.3];
             alertView.layerShadowRadius = 4.0;
-            alertView.layerShadowOpacity = 1.0;
             alertView.layerCornerRadius = 0.0;
             alertView.layerBorderWidth = 2.0;
             alertView.layerBorderColor = [UIColor colorWithRed:0.0 green:0.5 blue:1.0 alpha:1.0];
@@ -138,7 +136,6 @@
             alertView.coverAlpha = 0.85;
             alertView.layerShadowColor = [UIColor colorWithWhite:0.0 alpha:0.3];
             alertView.layerShadowRadius = 4.0;
-            alertView.layerShadowOpacity = 1.0;
             alertView.layerCornerRadius = 0.0;
             alertView.layerBorderWidth = 2.0;
             alertView.layerBorderColor = [UIColor colorWithRed:0.0 green:0.5 blue:1.0 alpha:1.0];
@@ -164,7 +161,6 @@
             alertView.coverAlpha = 0.85;
             alertView.layerShadowColor = [UIColor colorWithWhite:0.0 alpha:0.3];
             alertView.layerShadowRadius = 4.0;
-            alertView.layerShadowOpacity = 1.0;
             alertView.layerCornerRadius = 0.0;
             alertView.layerBorderWidth = 2.0;
             alertView.layerBorderColor = [UIColor colorWithRed:0.0 green:0.5 blue:1.0 alpha:1.0];
@@ -196,7 +192,6 @@
             alertView.coverAlpha = 0.85;
             alertView.layerShadowColor = [UIColor colorWithWhite:0.0 alpha:0.3];
             alertView.layerShadowRadius = 4.0;
-            alertView.layerShadowOpacity = 1.0;
             alertView.layerCornerRadius = 0.0;
             alertView.layerBorderWidth = 2.0;
             alertView.layerBorderColor = [UIColor colorWithRed:0.0 green:0.5 blue:1.0 alpha:1.0];
@@ -229,7 +224,6 @@
             alertView.coverAlpha = 0.85;
             alertView.layerShadowColor = [UIColor colorWithWhite:0.0 alpha:0.3];
             alertView.layerShadowRadius = 4.0;
-            alertView.layerShadowOpacity = 1.0;
             alertView.layerCornerRadius = 0.0;
             alertView.layerBorderWidth = 2.0;
             alertView.layerBorderColor = [UIColor colorWithRed:0.0 green:0.5 blue:1.0 alpha:1.0];
