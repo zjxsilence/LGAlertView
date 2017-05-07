@@ -119,16 +119,16 @@ typedef NS_ENUM(NSUInteger, LGAlertViewWindowLevel) {
 @property (strong, nonatomic, nullable) UIColor *tintColor UI_APPEARANCE_SELECTOR;
 /**
  Color hides main view when alert view is showing
- Default is [UIColor colorWithWhite:0.0 alpha:0.4]
+ Default is [UIColor colorWithWhite:0.0 alpha:0.35]
  */
 @property (strong, nonatomic, nullable) UIColor *coverColor UI_APPEARANCE_SELECTOR;
 /** Default is nil */
 @property (strong, nonatomic, nullable) UIBlurEffect *coverBlurEffect UI_APPEARANCE_SELECTOR;
 /** Default is 1.0 */
 @property (assign, nonatomic) CGFloat coverAlpha UI_APPEARANCE_SELECTOR;
-/** Default is UIColor.clearColor */
+/** Default is UIColor.whiteColor */
 @property (strong, nonatomic, nullable) UIColor *backgroundColor UI_APPEARANCE_SELECTOR;
-/** Default is UIBlurEffectStyleExtraLight */
+/** Default is nil */
 @property (strong, nonatomic, nullable) UIBlurEffect *backgroundBlurEffect UI_APPEARANCE_SELECTOR;
 /**
  Default:
@@ -157,7 +157,7 @@ typedef NS_ENUM(NSUInteger, LGAlertViewWindowLevel) {
  else window.width - 16.0
  */
 @property (assign, nonatomic) CGFloat width UI_APPEARANCE_SELECTOR;
-/** Default is [UIColor colorWithWhite:0.85 alpha:1.0] */
+/** Default is [UIColor colorWithWhite:0.0 alpha:0.15] */
 @property (strong, nonatomic, nullable) UIColor *separatorsColor UI_APPEARANCE_SELECTOR;
 /** Default is UIScrollViewIndicatorStyleBlack */
 @property (assign, nonatomic) UIScrollViewIndicatorStyle indicatorStyle UI_APPEARANCE_SELECTOR;

@@ -140,7 +140,7 @@
 - (void)showLGAlertViewWithNumber:(NSUInteger)number {
     NSMutableString *title = @"LGAlertView".mutableCopy;
     if (number != NSNotFound) {
-        [title appendFormat:@" %lu", number];
+        [title appendFormat:@" %lu", (unsigned long)number];
     }
 
     LGAlertView *alertView = [LGAlertView alertViewWithTitle:title
@@ -157,7 +157,7 @@
 - (void)showLGActionSheetWithNumber:(NSUInteger)number {
     NSMutableString *title = @"LGActionSheet".mutableCopy;
     if (number != NSNotFound) {
-        [title appendFormat:@" %lu", number];
+        [title appendFormat:@" %lu", (unsigned long)number];
     }
 
     LGAlertView *actionSheet = [LGAlertView alertViewWithTitle:title
@@ -174,7 +174,7 @@
 - (void)showUIAlertViewWithNumber:(NSUInteger)number {
     NSMutableString *title = @"UIAlertView".mutableCopy;
     if (number != NSNotFound) {
-        [title appendFormat:@" %lu", number];
+        [title appendFormat:@" %lu", (unsigned long)number];
     }
 
     UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:title
@@ -189,7 +189,7 @@
 - (void)showUIActionSheetWithNumber:(NSUInteger)number {
     NSMutableString *title = @"UIActionSheet".mutableCopy;
     if (number != NSNotFound) {
-        [title appendFormat:@" %lu", number];
+        [title appendFormat:@" %lu", (unsigned long)number];
     }
 
     UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:title
