@@ -132,7 +132,7 @@
             [alertController addAction:otherButton2];
 
             [self presentViewController:alertController animated:YES completion:nil];
-            
+
             break;
         }
         case 4: {
@@ -243,7 +243,7 @@
             alertView.destructiveButtonBackgroundColorHighlighted = [alertView.destructiveButtonBackgroundColorHighlighted colorWithAlphaComponent:0.5];
 
             [alertView showAnimated];
-            
+
             break;
         }
         case 12: {
@@ -293,7 +293,7 @@
             alertView.cancelButtonBackgroundColor = UIColor.blackColor;
 
             [alertView showAnimated];
-            
+
             break;
         }
         case 15: {
@@ -312,7 +312,7 @@
             alertView.backgroundColor = UIColor.clearColor;
 
             [alertView showAnimated];
-            
+
             break;
         }
         case 16: {
@@ -389,9 +389,9 @@
             alertView.destructiveButtonTitleColorHighlighted = UIColor.blackColor;
 
             alertView.cancelButtonBackgroundColor = UIColor.blackColor;
-            
+
             [alertView showAnimated];
-            
+
             break;
         }
     }
